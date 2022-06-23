@@ -1,12 +1,16 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components";
+import media from "styled-media-query";
 
 export const SectionButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`
+
+  ${media.lessThan("medium")`
+    margin-top: 70px;
+  `}
+`;
 
 export const Link = styled.a`
   border: solid 2px #fff;
@@ -16,17 +20,16 @@ export const Link = styled.a`
   border-radius: 50px;
   color: #fff;
   margin-top: 5%;
-  text-decoration: auto;
+  text-decoration: none;
   cursor: pointer;
 
-  ${media.lessThan('medium')`
-    width: 80px;
-    padding: 30px 200px;
+  ${media.lessThan("medium")`
+    width: 155px;
+    padding: 25px 200px;
   `}
 
-  ${media.lessThan('small')`
-    width: 30px;
-    padding: 30px 100px;
+  ${media.lessThan("small")`
+    padding: 25px 100px;
   `}
 
   :hover {
@@ -37,9 +40,14 @@ export const Link = styled.a`
   span {
     color: #fff;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
+
+    @media (max-width: 500px) {
+      font-weight: normal;
+      font-size: 14px;
+    }
   }
-`
+`;

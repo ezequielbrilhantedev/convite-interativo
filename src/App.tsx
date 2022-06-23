@@ -1,17 +1,11 @@
-import './App.scss'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './components/Template'
+import Home from "./components/Template";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

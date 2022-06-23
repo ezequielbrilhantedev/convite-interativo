@@ -18,13 +18,6 @@ const Info = () => {
           <p>@suelenoliveeira | seg à sex</p>
           <p>Casamentos | Aniversários | Eventos | Empresas</p>
         </S.InfDetails>
-        {/* <div>
-          <span>
-            <p>CONVITE PRÁTICO E DIGITAL</p>
-            <p>@suelenoliveeira | seg à sex</p>
-            <p>Casamentos | Aniversários | Eventos | Empresas</p>
-          </span>
-        </div> */}
       </S.InfBlock>
     </>
   )

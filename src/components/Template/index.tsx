@@ -1,3 +1,4 @@
+import Buttons from '../Buttons'
 import Info from '../Info'
 import Logo from '../Logo'
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Logo />
       <Info />
+      <Buttons />
     </>
   )
 }

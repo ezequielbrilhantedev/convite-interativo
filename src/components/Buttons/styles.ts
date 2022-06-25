@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const SectionButton = styled.div`
   display: flex;
@@ -7,10 +7,14 @@ export const SectionButton = styled.div`
   align-items: center;
   flex-direction: column;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     margin-top: 70px;
   `}
-`;
+
+  ${media.lessThan('small')`
+    margin-top: 1rem;
+  `}
+`
 
 export const Link = styled.a`
   border: solid 2px #fff;
@@ -19,17 +23,18 @@ export const Link = styled.a`
   padding: 30px 223px;
   border-radius: 50px;
   color: #fff;
-  margin-top: 5%;
+  margin-top: 3rem;
   text-decoration: none;
   cursor: pointer;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 155px;
     padding: 25px 200px;
-  `}
+    `}
 
-  ${media.lessThan("small")`
-    padding: 25px 100px;
+  ${media.lessThan('small')`
+    margin-top: 1rem;
+    padding: 25px 85px;
   `}
 
   :hover {
@@ -40,7 +45,7 @@ export const Link = styled.a`
   span {
     color: #fff;
     font-size: 18px;
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
@@ -50,4 +55,4 @@ export const Link = styled.a`
       font-size: 14px;
     }
   }
-`;
+`

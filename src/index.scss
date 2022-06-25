@@ -4,15 +4,10 @@ html {
   background-image: linear-gradient(180deg, #8100cc, #000);
   height: 100vh;
 
-  @media (max-width: 332px) {
-    height: 100vh;
-    background-image: linear-gradient(180deg, #8100cc, #000);
-  }
-
-  @media (min-width: 1400px) {
-    height: 100vh;
-    background: #65059c;
-  }
+  // @media (min-width: 1400px) {
+  //   height: 100vh;
+  //   background: #65059c;
+  // }
 }
 
 body {

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const SectionButton = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const SectionButton = styled.div`
   ${media.lessThan('small')`
     margin-top: 1rem;
   `}
-`
+`;
 
 export const Link = styled.a`
   border: solid 2px #fff;
@@ -38,7 +38,8 @@ export const Link = styled.a`
   `}
 
   :hover {
-    background-color: rgb(251, 158, 0, 0.733);
+    color: #8100cc;
+    background-color: rgb(252, 220, 0);
     transition-duration: 1s;
   }
 
@@ -50,9 +51,12 @@ export const Link = styled.a`
     font-weight: bold;
     text-align: center;
 
+    :hover {
+    }
+
     @media (max-width: 500px) {
       font-weight: normal;
       font-size: 14px;
     }
   }
-`
+`;

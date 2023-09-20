@@ -18,7 +18,7 @@ const Info = () => {
         </S.InfInsta>
         <S.InfDetails>
           <p>CONVITE PRÁTICO E DIGITAL</p>
-          <p>@suelenbrilhantee | seg à sex</p>
+          <p>seg à sex | 09h às 17h</p>
           <p>
             Casamentos | Aniversários | Eventos | Empresas
           </p>
